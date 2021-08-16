@@ -11,3 +11,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* anchor tag */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Animations */
+/* Zoom Wrapper */
+.zoom {
+  transform: scale(0);
+  -webkit-animation: zoom 0.5s forwards;
+  animation: zoom 0.3s forwards;
+}
+
+/* Slide Right Wrapper */
+.slideRight {
+  position: relative;
+  left: -100%;
+  -webkit-animation: slide 0.5s forwards;
+  animation: slide 0.2s forwards;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes zoom {
+  100% {
+    transform: scale(1);
+  }
+  /* 50% { transform: scale(.5); } */
+}
+
+@keyframes zoom {
+  100% {
+    transform: scale(1);
+  }
+  /* 50% { transform: scale(.5); } */
+}
